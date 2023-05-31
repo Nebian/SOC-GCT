@@ -45,7 +45,7 @@ El análisis de correos electrónicos puede ser hecho por diferentes roles dentr
 
 ## Detección y Análisis
 
-En esta sección se detallan los aspectos principales que permiten determinar con presición de que el correo recibido se trata de un email de phishing y no de un falso positivo. Por este motivo, se dividen los rasgos en externos, apreciables sin analizar el contenido técnico del correo, y los internos, apreciables cuándo se analiza el contenido técnico del correo (trace headers/headers/body).
+En esta sección se detallan los aspectos principales que permiten determinar con precisión de que el correo recibido se trata de un email de phishing y no de un falso positivo. Por este motivo, se dividen los rasgos en externos, apreciables sin analizar el contenido técnico del correo, y los internos, apreciables cuándo se analiza el contenido técnico del correo (trace headers/headers/body).
 
 
 ### Primeras sospechas

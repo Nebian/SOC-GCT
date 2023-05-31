@@ -1,0 +1,176 @@
+Received: from PAVPR10MB6910.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:102:320::17)
+ by AM7PR10MB3526.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Wed, 3 May 2023
+ 09:28:02 +0000
+Received: from AM5PR0602CA0020.eurprd06.prod.outlook.com
+ (2603:10a6:203:a3::30) by PAVPR10MB6910.EURPRD10.PROD.OUTLOOK.COM
+ (2603:10a6:102:320::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6340.31; Wed, 3 May
+ 2023 09:28:00 +0000
+Received: from AM6EUR05FT043.eop-eur05.prod.protection.outlook.com
+ (2603:10a6:203:a3:cafe::d9) by AM5PR0602CA0020.outlook.office365.com
+ (2603:10a6:203:a3::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6340.31 via Frontend
+ Transport; Wed, 3 May 2023 09:28:00 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.218.42)
+ smtp.mailfrom=gmail.com; dkim=pass (signature was verified)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.218.42 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.218.42; helo=mail-ej1-f42.google.com; pr=C
+Received: from mail-ej1-f42.google.com (209.85.218.42) by
+ AM6EUR05FT043.mail.protection.outlook.com (10.233.241.173) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6363.22 via Frontend Transport; Wed, 3 May 2023 09:28:00 +0000
+Received: by mail-ej1-f42.google.com with SMTP id a640c23a62f3a-9505214c47fso969235966b.1
+        for <e.perez@benmayor.com>; Wed, 03 May 2023 02:28:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1683106079; x=1685698079;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=nMWUVz51mWyiJqOo1+RCucBnwB4MpZjtxvk+0TL1ruU=;
+        b=TmC9ZLD/xX1KtJYsEXvP2ZH6ge7NMIRaOuRx42CEMhvz2zGMgv97dL5YMFk2soZt0F
+         o7EECDySeC0xwB/WUFCy5FqOHuv5YHZ/CKNwiRdq9jvShz0TXICHBKnfCvk/hj2IragU
+         yQpTmpBg5H+r2N91etxvo+v9U5D14Fw5ylQa22LJt9diNwVZGHqiPMefesTvv1/deARd
+         IFzVWp6XyevRcFHMtUG7zXrjuT3/oMqHe5kqgNvH3m8TdiO9+i8XLZdiPVKY7T1r3Msn
+         pQMwdiqA2No7WyI0LGd574A9TCU05NT4jd8aVbxo2W0VX1rN5gRsJGwVM2LaYbPggATb
+         3OoA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1683106079; x=1685698079;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=nMWUVz51mWyiJqOo1+RCucBnwB4MpZjtxvk+0TL1ruU=;
+        b=EyOxLL/1cNfXsRp1TRLB6LviQiFExH+IpxmdSOW0WS9+pDpsNdvqqADaEbq5p4b/rw
+         F+sFiX4k4Ar+GEYfQaw5cmYgigl4z7pVcJBg+6gdqvBFhcu6HPgHsgHmat1FjnpRTSZy
+         o4cUMTu2iywOKyEp4ctCsaGCf/UmYFNDQOv1kckF0QrB4+IZxA41mkVgnpcWI1D93Tbu
+         pnQkBxYu2nf8WOWaz8IzBzAs7Z+E9tJTxU3A3xclZTyZ88W6UquZ2SigZSMl/keiH5J4
+         7Cj5DRgRtWV5kERTENpXV6+4qjQfkipXcATfXdN2Qhgdx2MeXdO/7mtrtQbRGD+JbnqT
+         r6Rg==
+X-Gm-Message-State: AC+VfDwJBiOa7wt3sN8TvVq9Duk47R3Mk8PkekVwgB/TkIo/96cCUxrJ
+	CIzYL7sya5kJtvmhujl9foCungNgZMfMtwEGCPULC7aRScFR9MAYi59rdQ==
+X-Google-Smtp-Source: ACHHUZ6y95uZXrtiK277Qs/XtLCEna2sxarAZl8QR2RHs7uPBe6z5uWzuX3IMPI7B4nW6hxMpWM7tbqwkGCmUtiJHH4=
+X-Received: by 2002:a17:906:5d0c:b0:94a:8c3f:d0f0 with SMTP id
+ g12-20020a1709065d0c00b0094a8c3fd0f0mr2396798ejt.68.1683106079406; Wed, 03
+ May 2023 02:27:59 -0700 (PDT)
+From: Eduardo Benmayor <violetpurple121@gmail.com>
+Date: Wed, 3 May 2023 02:27:47 -0700
+Message-ID: <CACospFwvX1koAvp-U=sk__LBcdzL2EsLBS7CC8ri4XztME2NBA@mail.gmail.com>
+Subject:
+To: e.perez@benmayor.com
+Content-Type: multipart/alternative; boundary="000000000000fb7c1d05fac6ab95"
+Return-Path: violetpurple121@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 03 May 2023 09:28:00.2128
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f01352ac-42f0-47c8-4a54-08db4bb8b003
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 052f1b09-1e17-4a54-8744-0a0cb2215097:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ AM6EUR05FT043:EE_|PAVPR10MB6910:EE_|AM7PR10MB3526:EE_
+X-MS-Exchange-Organization-AuthSource:
+ AM6EUR05FT043.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: f01352ac-42f0-47c8-4a54-08db4bb8b003
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:209.85.218.42;CTRY:US;LANG:es;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mail-ej1-f42.google.com;PTR:mail-ej1-f42.google.com;CAT:SPM;SFS:(13230028)(451199021)(10202899009)(6916009)(86362001)(55446002)(564344004)(58800400005)(76482006)(1096003)(5660300002)(45080400002)(22186003)(6666004)(33964004)(42186006)(82202003)(7596003)(73392003)(356005)(7636003)(26005)(5406001)(336012)(166002);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 May 2023 09:28:00.1972
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f01352ac-42f0-47c8-4a54-08db4bb8b003
+X-MS-Exchange-CrossTenant-Id: 052f1b09-1e17-4a54-8744-0a0cb2215097
+X-MS-Exchange-CrossTenant-AuthSource:
+ AM6EUR05FT043.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PAVPR10MB6910
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4981059
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6340.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(910001)(944506478)(944626604)(920097)(930097)(3100021);RF:JunkEmail;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?V2c4dzVjT28rVkowdE9VUEZFWG1XSXhMNU12TDBBTHNtUG5Ba1RURHh3b1ZB?=
+ =?utf-8?B?K1ZxQjIzbXdIb0xhYkFLN1l1ck5ucFJHK08wSFJKNnI2K1pFY0VJdEZTNVZ1?=
+ =?utf-8?B?eldWdjJicm5ZK1NOU0twTHc2TEdmakI5VEJ3UUU3SkpPNk5wMVNXNjhjanFD?=
+ =?utf-8?B?ZHArdlY5eW8wUGtYUmJTK2M3bDFxVUhlZlp1UkZUMzNZVnRpSGZXaCszb2Rn?=
+ =?utf-8?B?U05nL3N6NnZCbmQ4NUdnemptRlFsRy8vTTZXNGFNZGphNzYrK2hpL3FPRTNK?=
+ =?utf-8?B?bzJIdzR2WWVMcHI3WU85aEprOGhSMStockdyQ2RzbkNkdnN0TU1NRnhCdU9I?=
+ =?utf-8?B?MmViQVJSUERvMnRLdVZxbDVGM1RueXpPZFgzTngxdUhsUFc0VUpKb0JYVngy?=
+ =?utf-8?B?Tk5ta1ExN29ZNTY2dkRQQkJFVWVSSU1oYmdKZ2pCWitFVFJCc0d1T3BUcStX?=
+ =?utf-8?B?WUVGcGJMeER6aUkyK3AvSC93d2RQdSs3enF5emlzRkJ6bm1EMjJDc1k4Z0NN?=
+ =?utf-8?B?L3l6bENFdVhLVk45OHhVczd1QWMvQ3JQQ21FcnBzQURjRHZiUndaamR4bUtm?=
+ =?utf-8?B?N0JqMUZ0VTQ2LzQyOEhtV2V5NnZSTEplWmhmQWtrSEt5am1LNUJFeXAzcVRs?=
+ =?utf-8?B?UlkxcEdhT08yenpEa3JHQTFEMHQwYkkxTUIyYU4zSG1jdnVSaHRWVm0yTXpy?=
+ =?utf-8?B?SXRHY2E4V1VEbVNMenYrK2xCRncrbXp0d1R4Y1l1eVdyNWNaa3UxUlVGRXEv?=
+ =?utf-8?B?Z0xLOVVERmIxY0JTeVVCd2dzMkcyY3BHcmtBeXlnVk9ncE1tQmRsK0U5OG9u?=
+ =?utf-8?B?cFM4dzd3VDRDUUVvR0J6aWVjT2pDbzZZM0p0NkpnRmJVa3FrUEUyT3JnRmFq?=
+ =?utf-8?B?SHl4a2xWL3B1R3NzZjNjNWU3b2hkMFFyVWpZd21waEs2ZUl1L0NVd2p0VTRO?=
+ =?utf-8?B?TlNLZDZuMytQRVVBSFlCTnAwZXM0UE91UnZLWFlmUXV0eFJoN2NQQitza2gr?=
+ =?utf-8?B?SEQ0UFFhS0JUVkZMVk9PbDJBTCtMakE3S21GRmRMdVA1SVd1cFM4RTAwVDZH?=
+ =?utf-8?B?RzlqNGw0SnE3cEovWmpHaFBJRFduMDI0dDVlWkltWU5NdmhHczEwS24xUW5r?=
+ =?utf-8?B?ZVFHWk8xWHNTdXhYWGsveWNRaHg4ZHM4c2FqN1BZQ0xvWHpTR3BNQkl6Z2pP?=
+ =?utf-8?B?bUE2T1lOV3hsTUZTRTJCRE0xUkh2RXJwY05mOFAvTEZKZkErejVtMHcyeTBa?=
+ =?utf-8?B?VzNVMVEzdmlDRXJ2a3FReWtodXlHQ016c1dlbkx5aFZoc0Fra0x3WFh6R0Qv?=
+ =?utf-8?B?VzBacW14Mzl4TnBYeWVoQUt0NG1sUGlIZ3BYQ092WlZhTlI5blFqbE1nQmMr?=
+ =?utf-8?B?MkxXdnZLYTJJWUsxSHlidms2Vm1OL1BySVBZcFVCMlJIc0pDMW50eEpRKzNy?=
+ =?utf-8?B?bTdobGptTzluOWdDc0NqRjk2TkluQXB2QzZjdGp6RFNXOFZNYThhamEwV2pm?=
+ =?utf-8?B?a25xRnI3bmFsejRnNnF5d1lqR3UyWXdlNFFRSEZOUmJ6dkRzUnhScGJ6Zno4?=
+ =?utf-8?B?bjFXMVYrUFhxSllTSlcrS1RPaSt3cWJjR2pGVUh3SWtiMEZJZ1BEeU5VaGY0?=
+ =?utf-8?B?MU1HWGt5ZmpyY2FRdkUwaCtVSFdrYlBlRzNML0tWYUtpSE1FMTlMZ2JzRUY4?=
+ =?utf-8?B?U3U1UktBM1lINmxVYUptM2o3VzNNTDFuUHJhSTZxZklZOHlRWjNyaW5WZ2lI?=
+ =?utf-8?B?RmRQQmMyOEhmdGdYdVlEVzk5Z1RsMXZkN3JPbTM2QVFrb3hJYmwwM1NaYlNT?=
+ =?utf-8?B?aWRieFZmVFZVeVkrNytnQThHN2ZUZEw0NGJkYk9DTTZ6ckNhb0JnQUZzNjVO?=
+ =?utf-8?B?a2hObjFJai83aXdRZHg5RFV5SVNhdmpXMk45V2xWRzZyTDh0VVBqOVFVNVZt?=
+ =?utf-8?B?UGZickZOWWJ6Rk94TEtDT3pqOVBTcExUUERjdFFtekFINXVBbTQ5VWhpK2RC?=
+ =?utf-8?B?dS9iVFpmOWVHaHdnN1Q4MFh1cjBxZlhoRW9EcmxxR29KZGRzcHc2eUdjalJs?=
+ =?utf-8?B?N0dRaG84ZkwzcGU5eVJWREpwMzVWNWwya2tKYm1tSkhNQm5SZlFYbUV3OUUy?=
+ =?utf-8?B?Y0xtMTh3QjVJUVdoci9ZQ1NOVWZUMFdub2hsN1VSaThCWVhWQzdxWEVYVVRu?=
+ =?utf-8?B?M3g0a2VWRm52SUNnYVcyTkNObEhNajAzckhma0dFalNEbEhnTFY1NDJtOUVI?=
+ =?utf-8?B?R2x0eFhqTWpzNE1VbDUzcTM2UU9UazBZUmdwNVBxNDRwMFVsRzdwV05abG5y?=
+ =?utf-8?B?N011N3h1YzA1SldIeWlZQU9sN3lrdHJJOERVUjhIWGozT3NIZ3FwMjIwbC95?=
+ =?utf-8?B?WTJDUjJFTzVuUVlraDBiRTAreEZpVERBVUw3TkJmSGI2N2VmcHdJRy9QcUQ1?=
+ =?utf-8?B?SDJ0U2R3TmVpclY4Y1VGY0g1UnVZME54NDEyOXF2c0EveCt0WWpsai9HTzZp?=
+ =?utf-8?B?emFsUW1nMS8xckduSUtzK0ROME82R3h1SE5tSnBSRThJeG5RUFd6R0IraHBY?=
+ =?utf-8?B?TGM4Mk5oVDJBQXozUDkrelBXOGpFR3EzQ1g5Qkh5Vy9NTStlYThVUSt6dlVn?=
+ =?utf-8?B?emxOc3VCa2JMcGVjd09KNkl4ZDRSV1RZRGhVNU9RUnFoSnkwYjRTSUtnOWVa?=
+ =?utf-8?B?ZjJ0eVFTTTI3TFJVVXIzbGZGMVRBL25lY25BVzhkVno5dC9zeVhEa29RRE5B?=
+ =?utf-8?B?RjZXeWV5NjBvNlB1U3FLN3pCcm1JTkRDdThrZmZ3L3kxVytSMTFuR2pWMENv?=
+ =?utf-8?Q?gCJuT2QZPMM0igjPa5PFU=3D?=
+MIME-Version: 1.0
+
+--000000000000fb7c1d05fac6ab95
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Efrain
+Env=C3=ADeme su n=C3=BAmero de WhatsApp
+
+
+
+*Eduardo Benmayor*
+<https://www.linkedin.com/sales/lead/ACwAAAUeLyEBQWsKO6xsz_iXM877WdB5iW57X9=
+Y,OUT_OF_NETWORK,sPX-?_ntb=3D4d1OYYEJQBSy79jXQJWssg%3D%3D>
+
+CEO
+
+--000000000000fb7c1d05fac6ab95
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Efrain<br>Env=C3=ADeme su n=C3=BAmero de WhatsApp<br><div><b=
+r></div><div><br></div><div><br></div><div><p style=3D"margin:0px 0px 2px;f=
+ont-stretch:normal;font-size:16px;line-height:normal;font-family:&quot;Helv=
+etica Neue&quot;;color:rgb(220,161,13)"><span style=3D"text-decoration:unde=
+rline"><a href=3D"https://www.linkedin.com/sales/lead/ACwAAAUeLyEBQWsKO6xsz=
+_iXM877WdB5iW57X9Y,OUT_OF_NETWORK,sPX-?_ntb=3D4d1OYYEJQBSy79jXQJWssg%3D%3D"=
+ target=3D"_blank"><b>Eduardo Benmayor</b></a></span></p><p style=3D"margin=
+:0px;font-stretch:normal;font-size:13px;line-height:normal;font-family:&quo=
+t;Helvetica Neue&quot;">CEO</p></div></div>
+
+--000000000000fb7c1d05fac6ab95--

@@ -1,0 +1,163 @@
+Received: from GV2PR03MB8509.eurprd03.prod.outlook.com (2603:10a6:150:7b::12)
+ by DB6PR03MB3016.eurprd03.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 07:09:45 +0000
+Received: from OL1P279CA0041.NORP279.PROD.OUTLOOK.COM (2603:10a6:e10:14::10)
+ by GV2PR03MB8509.eurprd03.prod.outlook.com (2603:10a6:150:7b::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6411.19; Thu, 18 May
+ 2023 07:09:42 +0000
+Received: from HE1EUR04FT045.eop-eur04.prod.protection.outlook.com
+ (2603:10a6:e10:14:cafe::9b) by OL1P279CA0041.outlook.office365.com
+ (2603:10a6:e10:14::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6411.19 via Frontend
+ Transport; Thu, 18 May 2023 07:09:42 +0000
+Authentication-Results: spf=pass (sender IP is 173.201.193.60)
+ smtp.mailfrom=azfamilyflorist.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=toskani.com;compauth=fail
+ reason=601
+Received-SPF: Pass (protection.outlook.com: domain of azfamilyflorist.com
+ designates 173.201.193.60 as permitted sender)
+ receiver=protection.outlook.com; client-ip=173.201.193.60;
+ helo=p3plwbeout16-04.prod.phx3.secureserver.net; pr=C
+Received: from p3plwbeout16-04.prod.phx3.secureserver.net (173.201.193.60) by
+ HE1EUR04FT045.mail.protection.outlook.com (10.152.26.183) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6411.19 via Frontend Transport; Thu, 18 May 2023 07:09:41 +0000
+Received: from p3plgemwbe16-02.prod.phx3.secureserver.net ([173.201.193.23])
+	by :WBEOUT: with SMTP
+	id zXlap5Fr3b397zXlapxDlC; Thu, 18 May 2023 00:09:38 -0700
+X-CMAE-Analysis: v=2.4 cv=XfBMcK15 c=1 sm=1 tr=0 ts=6465cf32
+ a=QKIiomYCKnxfaC9fsjDSAg==:117 a=C1J9Q5C8-2MA:10 a=IkcTkHD0fZMA:10
+ a=P0xRbXHiH_UA:10 a=fdoGYNB3Ofkv0aUYkzUA:9 a=mZ9VjH5RB1zvYb3y:21
+ a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=6GNBm1jHBFyoEnMTZuYf:22
+X-SECURESERVER-ACCT: store219@azfamilyflorist.com
+X-SID: zXlap5Fr3b397
+Received: (qmail 12297 invoked by uid 99); 18 May 2023 07:09:38 -0000
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+X-Originating-IP: 198.57.26.40
+User-Agent: Workspace Webmail 6.12.19
+Message-Id: <20230518000936.c031a153a55c76a5a7f402c0ae5dfe07.81e2edfd2b.wbe@email16.godaddy.com>
+From: "Joaquim Xalabarder Torrents" <jxalabarder@toskani.com>
+X-Sender: store219@azfamilyflorist.com
+Reply-To: "Joaquim Xalabarder Torrents" <drtrgenr4@proton.me>
+To: "administracion@toskani.com" <administracion@toskani.com>
+Subject: Pago
+Date: Thu, 18 May 2023 00:09:36 -0700
+X-CMAE-Envelope: MS4xfABdKF0B/0Vqw8ldzh79wDJ3ouT6WO1RaWH5F4ao6voLU5xZpLZXnq/sn0HPxYYraHpGszcQGY8kCx2CM72pSckNPCuiqAsB1xS3DKLZ/vXZsypxTvva
+ A64bRs4l5rTqioXglfJ6YxMKg4R2I+JTzBEAjGx+5TmArq11U7HO56aeTf5CExuwcUONwusar1UxJJMVqjNDKki6udtBryzY30RC8PGvos3OjuGSpWdySjID
+ kHg31Tvb/qbIZQUl/0oraA==
+Return-Path: store219@azfamilyflorist.com
+X-MS-Exchange-Organization-ExpirationStartTime: 18 May 2023 07:09:41.6854
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f5470331-0361-4647-be26-08db576ed9e6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 767cf995-d189-495a-9337-b5748365482f:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ HE1EUR04FT045:EE_|GV2PR03MB8509:EE_|DB6PR03MB3016:EE_
+X-MS-Exchange-Organization-AuthSource:
+ HE1EUR04FT045.eop-eur04.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: f5470331-0361-4647-be26-08db576ed9e6
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:173.201.193.60;CTRY:US;LANG:es;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:p3plwbeout16-04.prod.phx3.secureserver.net;PTR:p3plsmtp16-04-2.prod.phx3.secureserver.net;CAT:SPOOF;SFS:(13230028)(4636009)(451199021)(83170400001)(356005)(7636003)(576704005)(58800400005)(42186006)(103116003)(558084003)(9686003)(1096003)(1076003)(26005)(22186003)(7116003)(6916009)(6636002)(8676002)(5660300002)(3480700007)(426003)(336012)(120186005)(42882007)(47080200001);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 May 2023 07:09:41.1385
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f5470331-0361-4647-be26-08db576ed9e6
+X-MS-Exchange-CrossTenant-Id: 767cf995-d189-495a-9337-b5748365482f
+X-MS-Exchange-CrossTenant-AuthSource:
+ HE1EUR04FT045.eop-eur04.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: GV2PR03MB8509
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3693341
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6387.030
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(910001)(944506478)(944626604)(920097)(930097)(3100021);RF:JunkEmail;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?c2xiZzB0dExUaFZNTTNBQ2hoMlM5bTVldHBDQndmUXlHQ3FXTTRKV3hCbzIy?=
+ =?utf-8?B?cDB3dHJKMndYcVdXQmhiT3ljc3ZJejVpdGdnNzJ0dWFOZmdRL3NMcnFneFB0?=
+ =?utf-8?B?cEpvUkU5MkoxSVlKTnpIeTUwY0E0MkRETHQ1ZW1ya3dpYXNsSDJKM3QxSkVt?=
+ =?utf-8?B?S2VSQXVYbkYxUE5QSStRcW9pejh1NnNDSjBpREF2bFlnbGFSRDUvZUlDTnNz?=
+ =?utf-8?B?Z0FWbTFST3VRVkQ4alpSY0VveWRsVnVHdzlJdEpmeWh6bkt6UnBpSXkzUzJm?=
+ =?utf-8?B?b1p3aVV0SmFCbmltalp4WlhIbzRMMGF3VVZ1RXlxQ1p1Vk1vdmNvRjRrVWlR?=
+ =?utf-8?B?RFRMbjczY2hSL2ltNVd0bVlncERhM0xuekFFdlNORHNIeldNV0lDWVowWThz?=
+ =?utf-8?B?S2JOS0NGYkNBdjk3Z0xsOUs4YkJLek9PN1RQblUyamFvRGttYVVGMDlKV1cv?=
+ =?utf-8?B?RkJjYkhBZjhFbFZndTVkNkhoWjFkei9LY21iN25zZy9McVlOR3Y1UWFzTmJR?=
+ =?utf-8?B?a1cxaUduQ29FM2dveW9oNVF0djhrVUNyNUFnNnFxRU80Tk96YWZRdW1BNnZ3?=
+ =?utf-8?B?eWYvTXNkVktTV2ZRMlI4Q3hRbkpPT0JPS2tMQmp3ZFRndENWSERnZ1Y4Qisz?=
+ =?utf-8?B?dmlyeDJTZGZreHU2cXM3SXZYRXRPc096VUQwakd5Ly9MSll4YU5pc3FjWFYv?=
+ =?utf-8?B?M1Flczd3eUtXMTFiemx5OVFHM1pUUnBGZ2VrRFlHTkZSMnAwcXNjWk1KeGo5?=
+ =?utf-8?B?OC9NdmxFZFQ1VjFDdWZkNzByeElNaDZ6WXhCL2EwOUVCWUkxZDZmWXdQWDFE?=
+ =?utf-8?B?a0VwbEYzdUJzZ0RqSEw3Mm1VemNyTENUTkY1dlMrQUdsU3NHK0M1QjAwbVZI?=
+ =?utf-8?B?R1h3eHY0eFFRY0NCQ2JvWnV6WDI4RWJxaVpnc3REd0kvMlQ0cUFySm9mRHp2?=
+ =?utf-8?B?RU14QzdodHdoaXdHVldvRElyRnY3RWhDRExDaVJhL1ZZdTF3ZitIQzJCb0F0?=
+ =?utf-8?B?cDN4V2s4bFFxNzYxNitlSXN0UkJabGk1QWpobmdFWUNXRHJIQVlKUitaUEUw?=
+ =?utf-8?B?Q1dQNzliWUo0dkpnSEdPaFExeUU0U0ZZSDZDWExSSDlWMzh3Mkl6Q01oVFN4?=
+ =?utf-8?B?STB3M1pqSWdMUkJWcE9EU09Uc1BTMUxoYUVwRTgvRVZaaFRXK3d5K2I0ZkVs?=
+ =?utf-8?B?bEJpb2QvVHFxVFkybEFIS095OWR3K0lQaVhRdVRwYVFsbUw2Y2k4OTJVUjFG?=
+ =?utf-8?B?dXdpR0xYcVJXS2V4SldheVdQUWx5S0R6QUNlRHRqQ3J3bkRNekNmc1FOeWF2?=
+ =?utf-8?B?NEhyZm9FUy9CTE80aHlDY3hTOXhMQ0ZkcklJOGQ3cUpNRXQ3WkJ3aTN1VGJF?=
+ =?utf-8?B?SG9lOVh3SFZUMEVNemZ6ajFFV294Si9xc09CMjdNSGxZQU1KWHZTR3JSZUow?=
+ =?utf-8?B?SXFQUFMxbWFKU1pJWVNRaGN3emhWek1OR2QxSGgydUE4ckJEOTJkRHR3UERB?=
+ =?utf-8?B?dFBDOSs3YnBIMzlvTkZ2eDVRMFZwZTNqbWFDK1lESXJkdTFUTlFINlp6ajla?=
+ =?utf-8?B?MzRCOTQ4MGVpMnFQZzc1bXZsejVmTVVpS2NrUDcxb09MWmhvc0JJU1RXNmJo?=
+ =?utf-8?B?UE9YZnVpeFE4UUZCN0pQOWpyTXVXQW1MNzdJMThGQ0pBM3htRWZNWUJNTEw2?=
+ =?utf-8?B?U3h2aDNQa1JSd3RMdUhPc2dxekNLNjU0ZlUweGN3UXUzRy9XYXM5MUZBeUdk?=
+ =?utf-8?B?b0V6M1p1ZzlBK055c2lpV2crQjk0RDM5R1ZidHFZalFLeDU5K1JtTE1hMFB5?=
+ =?utf-8?B?VmRUMlA5TVRLRFoybmJSTmZWMzJLb2VVTXV6WmJYSTJjUS9nM0FHUHJhYkdJ?=
+ =?utf-8?B?WDBDYTlkOVVyLzV6djUrYkx5NS90NFkxSEFjRDkxZ05yUHVUenk2OENWZm1M?=
+ =?utf-8?B?OUM4akhVcFQ5eXFITmRhQ3drUkdwMkVDZzQvQ0lOOFd4QVRDUVdlQnBXNTR3?=
+ =?utf-8?B?QlJMcmdmV1liOTBPZjM5M281cEQ5cmNOUVl0Z3dOV09BN0ZNL1FWcEJOK21J?=
+ =?utf-8?B?dXFwVThpRENRTXRVZndrZTJWWWpIbTFQeWhpM3E0elFHaGcxN1EvQWh2UFc5?=
+ =?utf-8?B?cHZKcGk4WWNNNkhKZWJJV2lzcmkvRlNmckljM0VFUTdaQjFyYlUxa1N0bFpj?=
+ =?utf-8?B?bWxEMnAwOEdFTnI5OHdOekszSHRBN3dZbkl0Z2ZQZFNXQXJaNnRhQXd0RGFj?=
+ =?utf-8?B?SDBwejNDRzZGWElWQk9ZTTZEcU1WUjcwVmFzT2hEZFkzNnRFcXl4MjQxdDcw?=
+ =?utf-8?B?VXUxWGFZYm54QnVWa2Q5N3pac1h0MVc0TFFOd1Z6UDZsUnNvY0hSYno0RS9I?=
+ =?utf-8?B?VDl6Qm51N1pSeVUzM05iTk9CQkhWZUpaZnBwZExRdVArSDlzRm1SbFRpejdp?=
+ =?utf-8?B?UVpGL0hCUmZWL2lPNDN2NEJQT2VQbHhIL0Z6bnBTcEtIUzFMMFl2Q3AwSlJw?=
+ =?utf-8?B?MUVDVTlnd2F1c1J2cDNwd0p6WHBpU1V1RFB6ai9vemdrNzRmaDNCODNsSDNG?=
+ =?utf-8?B?bGJrTktaU0U5TW9IdEkvWldaVWg4VHZGckNTMjJEUU1UUUpDWEV1WGEzZENP?=
+ =?utf-8?B?RzlGalF4TEIrT0hpQS9lUXpzWkNObnRrcE9mTzZMS2dxYUdqakY0VGtNNFBG?=
+ =?utf-8?B?UVkyY2J0NWN6TWVJTDdaVzFJQTBKU0VNODBvY2dKelRRMWYrRVV6ekUyNjY3?=
+ =?utf-8?B?QXcxMVBwUUpLWjltVHdPK1FRdk9BMWc3TkRsZk5lRUhBRzlWVHpHNVpEaE1l?=
+ =?utf-8?B?bzZZY1BjMWQ1SEYzTlAwc2M0VG0vcWQrZ01DYlN0dU1XcEFOSmdrN1pZai9Z?=
+ =?utf-8?B?SVByK2lTU0tjY1FGS1NRb1lsTkNSaDFTQ0lhZXpHZnFkSjVVZjVya2lkZDN5?=
+ =?utf-8?B?blIrcmFId1VOSzNDMkhndjVHMHUrT2RSQ2h2eC9rWGx4NkhHMVRuMzd0cm5H?=
+ =?utf-8?B?NDd3NmJCVXVTMFd0VVVLeDFwT2dmZE5TcElkTGd6ZE13Skp6cXdtekc2a3pI?=
+ =?utf-8?B?VkYvc05TZGQwcUJ1TUZqQzUya21LYm9DQTVvYlhYT2M1by9MLzZDOTFJZ085?=
+ =?utf-8?B?T1g2dUcvNThQeVVNQXRZQXR0TE1vcEFHdmxLcmpmNUpmeStEa1FvOVpjNzR4?=
+ =?utf-8?B?aDZlRTZ1NytDTnlwc0RDeXZBZ1hLcVVlUE5DdmlicjBxdkFQWWtrV0hIeSsy?=
+ =?utf-8?B?Yys2RUxOam9PTXNoVk54YUNzVkNjQ0liZEN4VTIzYVdnU1V0V2tWbUhpTUZh?=
+ =?utf-8?B?c3hibG9CUUVkNklYYzR0SDdHSE0xMDJvb2tVU2dWcDdFdFBHK3ZpYnF0LzZB?=
+ =?utf-8?B?clhXVmFGdWdYYkl2TVNPdVlvWXRLcWZJYkhIdFBEcmtnL1pBVEFSQk9kYWtH?=
+ =?utf-8?B?eGd4cnBkVC9VOUxIeGE4R3dIK3lsUUJWdzFsSnNhWk1wZXNoWFBLVkl5Slkx?=
+ =?utf-8?B?azFFMmZFaTloWGdVYUh1dWtJdFJnTmYxQ2NudkZVb1JhdUY0VXdJcWpLOTIz?=
+ =?utf-8?Q?J15WbrF/OP8XKO?=
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><span style=3D"font-family:Verdana; color:#000000; font-size:10pt;"><=
+div style=3D""><font face=3D"verdana, geneva" style=3D""><span style=3D"">B=
+uenos d=C3=ADas ,</span></font></div><div style=3D""><font face=3D"verdana,=
+ geneva" style=3D""><span style=3D""><br style=3D""></span></font></div><di=
+v style=3D""><font face=3D"verdana, geneva" style=3D""><span style=3D"">Ten=
+emos que pagar =E2=82=AC16,851.90 a una empresa en el Reino Unido. Puedes p=
+rocesar el pago ahora?</span></font></div><div style=3D""><font face=3D"ver=
+dana, geneva" style=3D""><span style=3D""><br style=3D""></span></font></di=
+v><div style=3D""><font face=3D"verdana, geneva" style=3D""><span style=3D"=
+">Saludos,</span></font></div><div style=3D""><font face=3D"verdana, geneva=
+" style=3D"">Joaquim Xalabarder Torrents</font><font face=3D"verdana, genev=
+a" style=3D""><span style=3D"">.</span></font></div></span></body></html>
