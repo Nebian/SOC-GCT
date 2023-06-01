@@ -4,7 +4,7 @@
 - Diseño de baja calidad: El diseño del correo es pobre, carece de plantilla, la firma es demasiado simple, no tiene logo.
 
 ## Análisis
-Con las sospechas iniciales tenemos suficiente para decidirnos a seguir analizando el correo, en caso de que no encontremos nada, se hará una búsqueda más a fondo.
+Con las sospechas iniciales tenemos suficientes hilos de los que tirar para empezar con el análisis, en caso de que no encontremos nada, se hará una búsqueda más a fondo.
 
 ### VirusTotal
 Enviamos el correo a VirusTotal y nos confirma que el adjunto es un archivo malicioso de tipo troyano / phishing.  
@@ -12,3 +12,5 @@ Enviamos el correo a VirusTotal y nos confirma que el adjunto es un archivo mali
 
 ## Conclusión
 Como hemos interceptado este correo y ya hemos verificado que contiene un archivo malicioso, podemos marcarlo como phishing y bloquear el dominio que nos lo envía.
+
+**Tiempo empleado: 10 min**

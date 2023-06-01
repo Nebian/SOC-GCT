@@ -1,15 +1,16 @@
 # Reporte - Pago
 ## Sospechas Iniciales
-- Direcciones de correo electrónico sospechosas: La dirección de correo que nos envía el mensaje está en nuestro dominio, pero la dirección de la respuesta es a un dominio distinto, además un dominio de una empresa privada de la que se cree, es un honeypot federal.
+- Direcciones de correo electrónico sospechosas: La dirección de correo del remitente está en nuestro dominio, pero la dirección de la respuesta es a un dominio distinto, además un dominio de una empresa privada de la que se cree, es un honeypot federal.
 - Urgencia: Muestra cierta urgencia al decir que si el pago puede ser "ahora".
-Direcciones de correo electrónico sospechosas: La dirección de correo electrónico del remitente puede contener caracteres extraños, errores de ortografía, dominios desconocidos, es muy larga...
+- Diseño de baja calidad: La cantidad a ingresar es muy específica, pero que no especifique el nombre de la empresa es sospechoso, ¿cómo que se supone que va  a saber a qué empresa hacer el pago?
 
-Solicitudes de información personal: Los correos electrónicos de phishing a menudo solicitan que actualices tu información personal, incluyendo contraseñas, números de tarjeta de crédito y otros detalles financieros.
+## Análisis
+Las sospechas iniciales inducen una posible infiltración en la cuenta del empleado que envía el mensaje. 
 
-Urgencia: Estos mensajes a menudo tienen un tono de urgencia, solicitando que se tomen medidas inmediatas para evitar algún tipo de consecuencia negativa.
+### Ingeniería Social
+El atacante está usando la cuenta víctima para envíar correos y pone como correo de respuesta otro distinto para que la víctima suplantada no se percate al recibir una contestación. 
 
-Errores gramaticales y de ortografía: Aunque no siempre es el caso, muchos correos electrónicos de phishing están mal escritos o contienen errores gramaticales evidentes.
+## Conclusión
+Seguramente la estrategia trate de enviar un mensaje que pueda parecer real sobre un pago pero sin especificar detalles, entonces cuando la víctima que recibe el mensaje contesta preguntando por la dirección bancaria se le envía una cuenta bancaria que no pertenece a la supuesta empresa.
 
-Enlaces y adjuntos sospechosos: Los correos electrónicos de phishing a menudo incluyen enlaces a sitios web fraudulentos o adjuntos que contienen malware.
-
-Diseño de baja calidad: Algunos correos electrónicos de phishing pueden tener un diseño de baja calidad, como logotipos mal formateados o que parecen falsos.
+**Tiempo empleado: 15 min**
