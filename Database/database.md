@@ -7,7 +7,7 @@ Estamos usando un Windows Server 2019 para la base de datos, así que haremos un
 
 [Descarga de PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 
-Ejecutamos el instalador.
+Ejecutamos el instalador. 
 
 En la pantalla de selección de componentes dejamos todos seleccionados, pgAdmin será útil para administrar la base de datos y las Command Line Tools para la securización.
 

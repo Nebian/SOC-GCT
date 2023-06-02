@@ -2,7 +2,7 @@
 Install Pfsense --> Spanish Keymap --> Auto (UFS) BIOS --> Reboot
 ### Interfaces:
 ```bash
-WAN: 212.0.0.1
+WAN: DHCP 192.168.1.122
 ```
 ```bash
 LAN: 10.100.10.1
@@ -25,7 +25,7 @@ Una vez configuradas las IP hay que crear el Nateo entre las dos redes privadas 
 
 3. Asegúrate de estar en la pestaña "Port Forward" (Reenvío de puertos)
 
-#### WAN --> LAN
+- WAN --> LAN
 1. Haz clic en el botón "Add" (Agregar) para crear una nueva regla.
 2. En la sección "General settings", establece la siguiente configuración:
 
@@ -41,7 +41,7 @@ Una vez configuradas las IP hay que crear el Nateo entre las dos redes privadas 
 
 > Haz clic en "Save" para aplicar la nueva regla.
 
-#### LAN --> WAN
+- LAN --> WAN
 1. Haz clic en el botón "Add" (Agregar) para crear una nueva regla.
 2. En la sección "General settings", establece la siguiente configuración:
 
@@ -57,9 +57,9 @@ Una vez configuradas las IP hay que crear el Nateo entre las dos redes privadas 
 
 > Haz clic en "Save" para aplicar la nueva regla.
 
-En la barra de menú superior, haz clic en "Firewall" y selecciona "Rules" en el menú desplegable.
+3. En la barra de menú superior, haz clic en "Firewall" y selecciona "Rules" en el menú desplegable.
 
-#### LAN --> WAN
+- LAN --> WAN
 
 1. Asegúrate de estar en la pestaña "LAN" y haz clic en el botón "Add" (Agregar) para crear una nueva regla.
 
@@ -79,7 +79,7 @@ En la barra de menú superior, haz clic en "Firewall" y selecciona "Rules" en el
 
 > Haz clic en "Save" para aplicar la nueva regla.
 
-#### WAN --> LAN
+- WAN --> LAN
 
 1. Asegúrate de estar en la pestaña "WAN" y haz clic en el botón "Add" (Agregar) para crear una nueva regla.
 
@@ -99,7 +99,7 @@ En la barra de menú superior, haz clic en "Firewall" y selecciona "Rules" en el
 
 > Haz clic en "Save" para aplicar la nueva regla.
 
-
+Ahora vamos a Firewall --> Virtual IPs --> Add --> creamos la IP 212.0.0.1 en la interfaz LAN
 
 
 
