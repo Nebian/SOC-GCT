@@ -20,6 +20,8 @@ Desde aquí podemos hacer operaciones de administración de la base de datos sin
 
 [Descarga de DBeaver](https://dbeaver.io/download/)
 
+
+
 ```bash
 sudo apt update & upgrade -y 
 ```

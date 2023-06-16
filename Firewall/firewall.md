@@ -2,7 +2,10 @@
 Install Pfsense --> Spanish Keymap --> Auto (UFS) BIOS --> Reboot
 ### Interfaces:
 ```bash
-WAN: DHCP 192.168.1.122
+RED: DHCP 192.168.1.64
+```
+```bash
+WAN: 212.0.0.1
 ```
 ```bash
 LAN: 10.100.10.1
@@ -12,7 +15,7 @@ LAN: 10.100.10.1
 PC1: 10.100.10.15
 ```
 ```bash
-PC2: 10.100.10.160
+PC2: 10.100.10.16
 ```
 ```bash
 Server: 10.100.10.2
