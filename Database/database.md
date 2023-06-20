@@ -20,25 +20,13 @@ Desde aquí podemos hacer operaciones de administración de la base de datos sin
 
 [Descarga de DBeaver](https://dbeaver.io/download/)
 
-
-
-```bash
-sudo apt update & upgrade -y 
-```
-```bash
-sudo apt install postgresql
+## Creación de la base de datos
+```sql
+create role admingrail superuser createdb createrole inherit login replication;
+alter user admingrail with password '**********';
 ```
 
-Pasos:
-- Paso 1
-- Paso 2
-- Paso 3
-- esdtdsç
-- paso 420
-
-
-```py
-while 3 > 0:
-    if 3 == x:
-        print("Hello")
+```sql
+create database graildb with owner admingrail;
+alter database graildb owner to admingrail;
 ```

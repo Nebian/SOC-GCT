@@ -7,9 +7,6 @@ En este caso, nosotros contamos con un Windows 11 Server de 2022, dónde alojare
 
 Pasos:
 - Paso 1
-
-lllllllll
-
 - Paso 2
 
 Una vez instalado y configurado el sistema operativo, procedemos con la instalación de los roles y características que queramos instalar en nuestro servidor.
@@ -27,9 +24,3 @@ Una vez instalado y configurado el sistema operativo, procedemos con la instalac
 - esdtdsç
 - paso 420
 
-
-```py
-while 3 > 0:
-    if 3 == x:
-        print("Hello")
-```
