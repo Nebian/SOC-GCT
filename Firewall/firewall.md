@@ -104,6 +104,10 @@ Una vez configuradas las IP hay que crear el Nateo entre las dos redes privadas 
 
 Ahora vamos a Firewall --> Virtual IPs --> Add --> creamos la IP 212.0.0.1 en la interfaz LAN
 
+# Suricata
+Actualizarem
+
+
 
 
 
