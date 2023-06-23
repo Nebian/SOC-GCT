@@ -104,10 +104,35 @@ Una vez configuradas las IP hay que crear el Nateo entre las dos redes privadas 
 
 Ahora vamos a Firewall --> Virtual IPs --> Add --> creamos la IP 212.0.0.1 en la interfaz LAN
 
+
 # Suricata
-Actualizaremos
+Actualizaremos los paquetes de complementos de Pfsense y nos apareceran en el apartado grafico una lista --> seleccionamos suricata --> instalar.
 
+> Create interface LAN y WAN
 
+> Añadimos reglas de Snort
+
+> Aplicamos als reglas en WAN y LAN
+
+> Creamos reglas manuales para la detección de pings, deteccion de fuerza bruta entre otras
+
+> Configuramos la interface para que mande los logs de alerta y bloqueo a Wazuh
+
+> Configuramos las reglas de bloqueo
+
+> Activación de SSH para probar el bloqueo de fuerza brut als reglas en WAN y LAN
+
+> Creamos reglas manuales para la detección de pings, deteccion de fuerza bruta entre otras
+
+> Configuramos la interface para que mande los logs de alerta y bloqueo a Wazuh
+
+> Configuramos las reglas de bloqueo
+
+> Activación de SSH para probar el bloqueo de fuerza bruta
+
+> 
+
+🤣😁😁😁
 
 
 
